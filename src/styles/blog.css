@@ -39,6 +39,18 @@
   margin-bottom: 3rem;
   border-bottom: 1px solid #dadada;
 }
+.blog-pagination {
+  display: flex;
+  justify-content: center;
+}
+.blog-pagination ul {
+  display: flex;
+  padding: 0;
+}
+.blog-pagination li{
+  list-style-type: none;
+  padding: 1em;
+}
 .blog-main h1,
 .blog-main h2 {
   color: #353535;
@@ -110,6 +122,9 @@
 .post-part.single img {
   width: 100%;
   height: auto;
+}
+.active{
+  text-decoration: underline;
 }
 
 /**
