@@ -1,13 +1,17 @@
 import React from "react";
 import PostSample from './PostSample';
-import { usePrismicDocumentsByType } from "@prismicio/react";
+import Pagination from "./Pagination/Pagination";
+import { useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-const PostList = ({posts}) => {
+const PostList = ({posts, path}) => {
      return (
           <div className="blog-main">
+            <Pagination path={path}>
               {posts.map((post) => (
                 <PostSample post={post} key={post.id} />
               ))}
+            </Pagination>
           </div>
         );
   //  }
