@@ -5,10 +5,12 @@ import { Layout } from "../components/Layout";
 import * as prismicH from "@prismicio/helpers";
 import { components } from '../slices/index';
 import { Link } from "react-router-dom";
+import BackButton from "../components/BackButton";
+
 const Post = () => {
     const {uid} = useParams();
     const [prismicDoc, prismicDocState] = usePrismicDocumentByUID("post", uid);
-    const notFound = prismicDocState.state === "failed";
+
   useEffect(() => {
     if (prismicDocState.state === "failed") {
       console.warn(
@@ -27,6 +29,7 @@ const Post = () => {
   return (
       <Layout wrapperClass="main post" >
          <div className="outer-container">
+          <BackButton/>
           <h1 className="post-title">{title}</h1>
           <ul className="post-categories">{categories}</ul>
         </div>
