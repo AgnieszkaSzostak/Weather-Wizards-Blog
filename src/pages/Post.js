@@ -20,15 +20,15 @@ const Post = () => {
   if (prismicDoc) {
     const title = prismicH.asText(prismicDoc.data.post_title) || "Untitled";
     const categories = prismicDoc.data.categories.map(cat => {
-      return <li><Link to={`${cat.category.url}/${cat.category.slug}`}>{cat.category.slug}</Link></li>
+      return <li key={cat.category.url}><Link to={`${cat.category.url}/${cat.category.slug}`}>{cat.category.slug}</Link></li>
   } )
 
   
   return (
-      <Layout wrapperClass="main" >
+      <Layout wrapperClass="main post" >
          <div className="outer-container">
-          <h1>{title}</h1>
-          <ul>{categories}</ul>
+          <h1 className="post-title">{title}</h1>
+          <ul className="post-categories">{categories}</ul>
         </div>
         <SliceZone slices={prismicDoc.data.body} components={components} />
       </Layout>
