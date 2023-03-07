@@ -6,7 +6,7 @@ const Posts = () => {
     const [blogPosts] = usePrismicDocumentsByType("post")
     if(blogPosts){
         return (
-            <PostList posts={blogPosts.results}/>
+            <PostList path={`/blog`} posts={blogPosts.results}/>
         )
     }
 }
