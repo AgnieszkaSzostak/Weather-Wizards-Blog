@@ -1,6 +1,6 @@
 import { PrismicText } from "@prismicio/react";
 import { Link } from "react-router-dom";
-import CategoryList from "./CategoryList";
+import CategoryNavigation from "./CategoryNavigation";
 export const Header = ({ image, headline, description, categories }) => {
   return (
     
@@ -16,7 +16,7 @@ export const Header = ({ image, headline, description, categories }) => {
         <PrismicText field={description} />
       </p>
       <div className="blog-categories">
-        <CategoryList categories={categories}/>
+        <CategoryNavigation categories={categories}/>
       </div>
     </div>
   );
