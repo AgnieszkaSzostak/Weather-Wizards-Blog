@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import PostList from './PostList';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-const CategoryPosts = () => {
+const PostsCategory = () => {
     const {name} = useParams()
 
     const [category, categoryState] = usePrismicDocumentByUID('category',name)
@@ -37,4 +37,4 @@ const CategoryPosts = () => {
 
 }
 
-export default CategoryPosts
+export default PostsCategory

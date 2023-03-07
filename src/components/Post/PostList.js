@@ -1,6 +1,6 @@
 import React from "react";
 import PostSample from './PostSample';
-import Pagination from "./Pagination/Pagination";
+import Pagination from "../Pagination/Pagination";
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 

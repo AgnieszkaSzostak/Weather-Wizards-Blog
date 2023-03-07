@@ -4,8 +4,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Post from './pages/Post';
-import Category from './components/CategoryPosts';
-import Posts from './components/Posts';
+import Category from './components/Post/PostsCategory';
+import Posts from './components/Post/Posts';
 import NotFound from './pages/NotFound';
 
 function App() {
