@@ -11,7 +11,7 @@ const PaginationRoute = (props) => {
     const pages = Math.ceil(length / limit)
  
     useEffect(()=>{
-        if(page > pages || !isNaN(parseInt(page)) ){
+        if(page > pages || isNaN(page) ) {
             navigate(`${path}/1`)
         }
     },[navigate, page, pages, path])

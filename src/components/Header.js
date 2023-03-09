@@ -4,7 +4,7 @@ import CategoryNavigation from "./CategoryNavigation";
 export const Header = ({ image, headline, description, categories }) => {
   return (
     
-    <div className="home">
+    <header className="home">
       <div
         className="blog-avatar"
         style={{ backgroundImage: `url(${image.url})` }}
@@ -18,6 +18,6 @@ export const Header = ({ image, headline, description, categories }) => {
       <div className="blog-categories">
         <CategoryNavigation categories={categories}/>
       </div>
-    </div>
+    </header>
   );
 }

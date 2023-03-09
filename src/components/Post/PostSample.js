@@ -3,15 +3,15 @@ import * as prismicH from "@prismicio/helpers";
 import { Link } from "react-router-dom";
 
 
-const PostSample = ({post}) => {
-    const title = prismicH.asText(post.data.post_title)
-    const firstTextSlice = post.data.body.find((slice) => slice.slice_type === "text")
+const PostSample = ({data, uid}) => {
+    const title = prismicH.asText(data.post_title)
+    const firstTextSlice = data.body.find((slice) => slice.slice_type === "text")
     const sample = prismicH.asText(firstTextSlice.primary.text)
 
     return (
     <div className="blog-post">
         <h2>
-            <Link to={`/post/${post.uid}`}>
+            <Link to={`/post/${uid}`}>
                 {title}
             </Link>
         </h2>

@@ -4,13 +4,13 @@ import Pagination from "../Pagination/Pagination";
 
 const PostList = ({posts, path}) => {
      return (
-          <div className="blog-main">
+          <main className="blog-main">
             <Pagination path={path}>
               {posts.map((post) => (
-                <PostSample post={post} key={post.id} />
+                <PostSample uid={post.uid} data={post.data} key={post.id} />
               ))}
             </Pagination>
-          </div>
+          </main>
         );
   //  }
 
