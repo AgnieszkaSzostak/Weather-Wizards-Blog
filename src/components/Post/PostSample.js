@@ -10,7 +10,7 @@ const PostSample = ({data, uid}) => {
 
     return (
     <div className="blog-post">
-        <h2>
+        <h2 className="blog-post-title">
             <Link to={`/post/${uid}`}>
                 {title}
             </Link>

@@ -18,8 +18,8 @@ const PaginationRoute = (props) => {
     
     const activeClass = 'active';
     const links = (new Array(pages).fill(0)).map((item, index) => 
-        <li key={index}>
-            <NavLink activeclassname={activeClass} to={`${path}/${index +1 }`}>{index + 1 }</NavLink>
+        <li className="blog-pagination-item" key={index}>
+            <NavLink className="blog-pagination-link" activeclassname={activeClass} to={`${path}/${index +1 }`}>{index + 1 }</NavLink>
         </li>
     )
 
@@ -27,7 +27,7 @@ const PaginationRoute = (props) => {
         <>
                 {children.slice(begin, end)}
                 <nav className="blog-pagination">
-                    <ul>{links}</ul>
+                    <ul className="blog-pagination-list">{links}</ul>
                 </nav>
         </>
     )

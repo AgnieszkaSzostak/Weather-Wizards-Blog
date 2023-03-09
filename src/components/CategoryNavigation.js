@@ -5,17 +5,17 @@ const CategoryNavigation = ({categories}) => {
     if(categories){
         const activeClass = "active"
         return (
-            <div className="outer-container">
-                <ul> 
+            <nav className="outer-container navigation">
+                <ul className="navigation-list"> 
                     {categories.map(cat => <li
+                    className="navigation-item"
                         key={cat.uid}>
-                            <NavLink activeclassname={activeClass} to={`${cat.url}/${cat.slugs[0]}`}>
+                            <NavLink className="navigation-link" activeclassname={activeClass} to={`${cat.url}/${cat.slugs[0]}`}>
                                 {cat.uid}
                             </NavLink>
                         </li>)}
                 </ul>
-    
-            </div>
+            </nav>
         )
     }
 }

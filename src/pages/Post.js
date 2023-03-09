@@ -22,7 +22,7 @@ const Post = () => {
   if (prismicDoc) {
     const title = prismicH.asText(prismicDoc.data.post_title) || "Untitled";
     const categories = prismicDoc.data.categories.map(cat => {
-      return <li key={cat.category.url}><Link to={`${cat.category.url}/${cat.category.slug}`}>{cat.category.slug}</Link></li>
+      return <li class="post-category-item" key={cat.category.url}><Link className="post-categories-link" to={`${cat.category.url}/${cat.category.slug}`}>{cat.category.slug}</Link></li>
   } )
 
   
