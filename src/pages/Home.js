@@ -1,11 +1,9 @@
 import React, {useEffect} from "react";
 import { usePrismicDocumentsByType,useSinglePrismicDocument } from "@prismicio/react";
-import CategoryList from "../components/CategoryNavigation";
 import { Layout } from "../components/Layout";
 import { Header } from "../components/Header";
-
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import Pagination from "../components/Pagination/Pagination";
+
 const Home = () => {
     const navigate = useNavigate()
     const path = useLocation()

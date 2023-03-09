@@ -1,5 +1,4 @@
-import React, {useEffect} from "react";
-import { Link, useNavigate, Route, Routes } from "react-router-dom";
+import React from "react";
 import PaginationRoute from "./PaginationRoute";
 
 const Pagination = props => {
