@@ -7,7 +7,7 @@ const PostList = ({posts, path}) => {
           <main className="blog-main">
             <Pagination path={path}>
               {posts.map((post) => (
-                <PostSample uid={post.uid} data={post.data} key={post.id} />
+                <PostSample uid={post.uid} data={post.data} key={post.uid} />
               ))}
             </Pagination>
           </main>

@@ -8,7 +8,7 @@ const CategoryNavigation = ({categories}) => {
             <div className="outer-container">
                 <ul> 
                     {categories.map(cat => <li
-                        key={cat.slugs[0]}>
+                        key={cat.uid}>
                             <NavLink activeclassname={activeClass} to={`${cat.url}/${cat.slugs[0]}`}>
                                 {cat.uid}
                             </NavLink>
