@@ -8,7 +8,7 @@ const PostsCategory = () => {
     const {name} = useParams()
 
     const [category, categoryState] = usePrismicDocumentByUID('category',name)
-    const [blogPosts] = usePrismicDocumentsByType("post")
+    const [blogPosts, blogPostsState] = usePrismicDocumentsByType("post")
     const path =useLocation()
     const navigate = useNavigate()
     useEffect(() => {
@@ -18,10 +18,11 @@ const PostsCategory = () => {
       
       }, [navigate, path, name])
     useEffect(() => {
-        if(categoryState.state === "failed"){
+        if(categoryState.state === "failed" || blogPostsState.state === "failed"){
             navigate('/page404')
         }
-    }, [navigate, categoryState])
+    }, [navigate, categoryState, blogPostsState])
+
     if(category && blogPosts){
         const allPosts = blogPosts.results;
         const postCat = category.data.posts.map(item => item.post)
