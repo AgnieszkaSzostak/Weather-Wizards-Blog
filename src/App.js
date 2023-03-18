@@ -13,7 +13,7 @@ function App() {
     return (
       <Router basename='/Weather-Wizards-Blog'>
         <Routes>
-          <Route path="/" element={<Home/>}>
+          <Route exact path="/" element={<Home/>}>
             <Route exact path={"blog/:page"} element={<Posts/>}>
             </Route>
           </Route>
