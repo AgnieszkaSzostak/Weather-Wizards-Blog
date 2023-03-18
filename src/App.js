@@ -1,7 +1,7 @@
 import './styles/common.css'
 import './styles/blog.css'
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Post from './pages/Post';
 import Category from './components/Post/PostsCategory';
@@ -11,7 +11,7 @@ import NotFound from './pages/NotFound';
 function App() {
 
     return (
-      <Router basename="/Weather-Wizards-Blog">
+      <Router >
         <Routes>
           <Route path="/" element={<Home/>}>
             <Route exact path={"blog/:page"} element={<Posts/>}>
