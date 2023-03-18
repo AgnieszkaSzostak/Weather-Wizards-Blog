@@ -11,7 +11,7 @@ import NotFound from './pages/NotFound';
 function App() {
 
     return (
-      <Router>
+      <Router basename="/Weather-Wizards">
         <Routes>
           <Route exact path="/" element={<Home/>}>
             <Route exact path={"blog/:page"} element={<Posts/>}>
