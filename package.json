@@ -1,8 +1,9 @@
 {
-  "homepage": "https://AgnieszkaSzostak.github.io/Weather-Wizards-Blog",
+  "home": "Weather Wizards",
+  "homepage": "https://AgnieszkaSzostak.github.io/Weather-Wizards",
   "name": "task-react-routing",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@prismicio/client": "^6.7.3",
     "@prismicio/helpers": "^2.3.9",
