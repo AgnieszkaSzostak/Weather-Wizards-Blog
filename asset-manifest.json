@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Weather-Wizards/static/css/main.31a593bf.css",
-    "main.js": "/Weather-Wizards/static/js/main.226e7555.js",
-    "static/js/787.67090af6.chunk.js": "/Weather-Wizards/static/js/787.67090af6.chunk.js",
-    "index.html": "/Weather-Wizards/index.html",
-    "main.31a593bf.css.map": "/Weather-Wizards/static/css/main.31a593bf.css.map",
-    "main.226e7555.js.map": "/Weather-Wizards/static/js/main.226e7555.js.map",
-    "787.67090af6.chunk.js.map": "/Weather-Wizards/static/js/787.67090af6.chunk.js.map"
+    "main.css": "/Weather-Wizards-Blog/static/css/main.31a593bf.css",
+    "main.js": "/Weather-Wizards-Blog/static/js/main.e8a92151.js",
+    "static/js/787.67090af6.chunk.js": "/Weather-Wizards-Blog/static/js/787.67090af6.chunk.js",
+    "index.html": "/Weather-Wizards-Blog/index.html",
+    "main.31a593bf.css.map": "/Weather-Wizards-Blog/static/css/main.31a593bf.css.map",
+    "main.e8a92151.js.map": "/Weather-Wizards-Blog/static/js/main.e8a92151.js.map",
+    "787.67090af6.chunk.js.map": "/Weather-Wizards-Blog/static/js/787.67090af6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31a593bf.css",
-    "static/js/main.226e7555.js"
+    "static/js/main.e8a92151.js"
   ]
 }
